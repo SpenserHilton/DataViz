@@ -1,0 +1,22 @@
+Sub StarCounter()
+Dim StarCounter as integer
+Dim TotalStars as integer
+	TotalStars = 0 
+
+   For i= 2 To 51
+   StarCounter = 0 
+   		For j= 4 to 8
+   			if(Cells(i,j)..Value = "Full-Star") Then
+   			StarCounter= StarCounter+1
+
+   			end if 
+
+		next j
+
+	Cells(i,9).Value = StarCounter
+
+	TotalStars = TotalStars + StarCounter
+
+	next i
+
+	
